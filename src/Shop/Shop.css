@@ -1,0 +1,29 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    padding: 1em 1.5em;
+}
+
+.item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orangered;
+    border: 3px solid orangered;
+    border-radius: 4px;
+    padding: 1em;
+    color: yellow;
+}
+
+@media (min-width: 826px) {
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+    }
+}
